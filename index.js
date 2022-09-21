@@ -38,11 +38,10 @@ Do the following:
 */
 const firstThing = "thing"
 let secondThing = "thing"
-if (firstThing === secondThing){
-  let secondThing = "second thing"
+if (secondThing === "thing"){
+  let firstThing = "second thing"
   console.log(firstThing)
 }
-
 
 
 
