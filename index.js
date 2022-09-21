@@ -255,10 +255,11 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(number){
+  for(let i = number; i > 0; i --){
+    return `${i} bottles of soda on the wall, ${i} bottles of soda, take one down pass it around ${i -1} bottles of soda on the wall`
+  }
 }
-
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -274,9 +275,18 @@ Using the grade function below do the following:
  60-69 should return 'you got a D'
  below should return 'you got an F'
 */
-
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(number){
+  if(number >= 90 ){
+  return 'you got an A'
+} else if(number >=80 && number <90){
+  return 'you got a B'
+} else if(number >= 70 && number < 80){
+  return 'you got a C'
+} else if(number >= 60 && number < 70){
+  return 'you got a D'
+} else if(number <= 59){
+  return 'you got an F'
+}
 }
 
 
